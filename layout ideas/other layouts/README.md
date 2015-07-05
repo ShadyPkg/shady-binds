@@ -1,0 +1,2 @@
+I like the overall concept of the Xamindar one, with the simple lines that are easy on the ink, but feel execution is poor. The execution of the stick and throttle in Morph is much better, but the angles arnt great for putting a lot of info on screen.
+It would be cool if a Xamindar with Morph lines were possible but with a lot more space between the buttons on the base and the other bits to put tables of button definitions. There's a switch that allows for three modes, so every button/switch should have space to fit a table to cover those.
