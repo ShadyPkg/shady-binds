@@ -1,0 +1,3 @@
+The Saitek programming profile (Saitek X-55 DCS UH-1H.pr0) relies on the default keyboard mappings in DCS UH-1H. They are provided here just in case, as well as the few mapping changes in DCS for the X-55 that cannot be done effectively in the Saitek profiler.
+
+If you don't have TrackIR, you can set the X-55 throttle F push (top rotary click) to something other than TrackIR Center in the Saitek programming tab.
