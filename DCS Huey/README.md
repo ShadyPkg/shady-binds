@@ -23,7 +23,7 @@ t: throttle		s: stick
 ##Gimmie Power (Look with your eyes to the overhead midline panel):
 - tTGL4 down for AC voltmeter.
 - tTGL3 down for DC generator.
-- tTGL2 down for DC voltmeter.
+- tTGL2 down twice for DC voltmeter.
 - tTGL1 down for battery.
 
 ##Loud Noises: (Look bottom midline panel):
