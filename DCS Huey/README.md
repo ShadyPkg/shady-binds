@@ -1,8 +1,9 @@
 #Words:
-The Saitek programming profile (Saitek X-55 DCS UH-1H.pr0) relies on the default keyboard mappings in DCS UH-1H. The only mappings that need to be done within DCS are those related to axis ranges and appear all together under one page on the controls screen. There are screenshots included to provide an example of how the axis controls should be assigned, but keep in mind I use rudder pedals so adjust to taste. There's also two TrackIR assignments in the Saitek pr0 file under MODE1 and MODE2 for the throttle G rotary click that can be swapped based on your arrangement. 
+The Saitek programming profile (Saitek X-55 DCS UH-1H.pr0) relies on the default keyboard mappings in DCS UH-1H. The only mappings that need to be done within DCS are those related to axis ranges and appear all together under one page on the controls screen. There are screenshots included to provide an example of how the axis controls should be assigned, but keep in mind I use rudder pedals so adjust to taste. There's also two TrackIR assignments in the Saitek pr0 file under MODE1 and MODE2 for the throttle G rotary click that can be swapped out based on your arrangement. 
 
 #What follows is a low fat list of buttons to massage on the X55 to complete the UH-1H cold start tutorial.
-t: throttle		s: stick
+t: throttle
+s: stick
 
 ##PreGame:
 - Set MODE1 on throttle.
