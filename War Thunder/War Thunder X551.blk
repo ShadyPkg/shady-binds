@@ -2,10 +2,10 @@ settings{
   aileronsMultiplier:r=1
   elevatorMultiplier:r=1
   rudderMultiplier:r=1
-  zoomSens:r=0.36
+  zoomSens:r=0
   mouseSens:r=2
   mouseAimSens:r=2
-  gunnerViewSens:r=1.75
+  gunnerViewSens:r=1
   mouseSmooth:b=no
   mouseJoystickDeadZone:r=0.1
   mouseJoystickScreenSize:r=0.6
@@ -14,9 +14,9 @@ settings{
   mouseAileronRudderFactor:r=0.5
   mouseJoystickSquare:b=no
   mouseJoyMode:i=0
-  cameraSmooth:r=0.045
-  cameraSpeed:r=0.875
-  cameraMouseSpeed:r=0.875
+  cameraSmooth:r=0
+  cameraSpeed:r=0.95
+  cameraMouseSpeed:r=3.95
   cameraFpsPhysMult:r=0.5
   invertY:b=no
   invertX:b=no
@@ -283,19 +283,7 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=3
-        buttonId:i=46
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=2
-        buttonId:i=56
-      }
-
-      button{
-        deviceId:i=2
-        buttonId:i=57
+        buttonId:i=47
       }
     }
   }
@@ -305,15 +293,15 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=37
+        deviceId:i=2
+        buttonId:i=19
       }
     }
 
     shortcut{
       button{
-        deviceId:i=2
-        buttonId:i=19
+        deviceId:i=3
+        buttonId:i=13
       }
     }
   }
@@ -323,11 +311,11 @@ hotkeys{
   }
 
   event{
-    name:t="gm_throttle_rangeDec"
+    name:t="brake_right_rangeDec"
   }
 
   event{
-    name:t="gm_throttle_rangeInc"
+    name:t="brake_right_rangeInc"
   }
 
   event{
@@ -354,11 +342,11 @@ hotkeys{
   }
 
   event{
-    name:t="gm_turret_y_rangeDec"
+    name:t="brake_left_rangeDec"
   }
 
   event{
-    name:t="gm_turret_y_rangeInc"
+    name:t="brake_left_rangeInc"
   }
 
   event{
@@ -374,11 +362,11 @@ hotkeys{
   }
 
   event{
-    name:t="gm_turret_x_rangeDec"
+    name:t="cam_vert_rangeDec"
   }
 
   event{
-    name:t="gm_turret_x_rangeInc"
+    name:t="cam_vert_rangeInc"
   }
 
   event{
@@ -390,11 +378,11 @@ hotkeys{
   }
 
   event{
-    name:t="ID_HELI_FLIR"
+    name:t="cam_strafe_rangeDec"
   }
 
   event{
-    name:t="ID_HELI_DEBUG_FLIGHTMODEL"
+    name:t="cam_strafe_rangeInc"
   }
 
   event{
@@ -406,11 +394,11 @@ hotkeys{
   }
 
   event{
-    name:t="ID_HELI_TOGGLE_SEAT"
+    name:t="cam_fwd_rangeDec"
   }
 
   event{
-    name:t="ID_HELI_ANTIMISSILE_SYSTEM"
+    name:t="cam_fwd_rangeInc"
   }
 
   event{
@@ -423,10 +411,24 @@ hotkeys{
 
   event{
     name:t="camx_rangeMax"
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=24
+      }
+    }
   }
 
   event{
     name:t="camx_rangeMin"
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=26
+      }
+    }
   }
 
   event{
@@ -583,6 +585,18 @@ hotkeys{
 
       button{
         deviceId:i=2
+        buttonId:i=42
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=28
+      }
+
+      button{
+        deviceId:i=2
         buttonId:i=54
       }
     }
@@ -593,11 +607,11 @@ hotkeys{
   }
 
   event{
-    name:t="ID_HELI_TOGGLE_KEEP_HEIGHT"
+    name:t="weapon_rangeDec"
   }
 
   event{
-    name:t="ID_HELI_TOGGLE_KEEP_POS"
+    name:t="weapon_rangeInc"
   }
 
   event{
@@ -617,33 +631,19 @@ hotkeys{
   }
 
   event{
-    name:t="ID_HELI_PREV_MISSILE_TYPE"
+    name:t="brake_rangeDec"
   }
 
   event{
-    name:t="ID_HELI_CHANGE_MISSILE_TYPE"
+    name:t="brake_rangeInc"
   }
 
   event{
     name:t="brake_left_rangeMax"
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=4
-      }
-    }
   }
 
   event{
     name:t="brake_right_rangeMax"
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=3
-      }
-    }
   }
 
   event{
@@ -659,11 +659,11 @@ hotkeys{
   }
 
   event{
-    name:t="ID_PAUSE_GAME"
+    name:t="radiator_rangeDec"
   }
 
   event{
-    name:t="ailerons_rangeInc"
+    name:t="radiator_rangeInc"
   }
 
   event{
@@ -683,11 +683,11 @@ hotkeys{
   }
 
   event{
-    name:t="ailerons_rangeDec"
+    name:t="prop_pitch_rangeDec"
   }
 
   event{
-    name:t="elevator_rangeInc"
+    name:t="prop_pitch_rangeInc"
   }
 
   event{
@@ -707,11 +707,11 @@ hotkeys{
   }
 
   event{
-    name:t="elevator_rangeDec"
+    name:t="mixture_rangeDec"
   }
 
   event{
-    name:t="rudder_rangeInc"
+    name:t="mixture_rangeInc"
   }
 
   event{
@@ -731,11 +731,11 @@ hotkeys{
   }
 
   event{
-    name:t="rudder_rangeDec"
+    name:t="trim_rudder_rangeDec"
   }
 
   event{
-    name:t="throttle_rangeDec"
+    name:t="trim_rudder_rangeInc"
   }
 
   event{
@@ -751,11 +751,11 @@ hotkeys{
   }
 
   event{
-    name:t="throttle_rangeInc"
+    name:t="trim_ailerons_rangeDec"
   }
 
   event{
-    name:t="camy_rangeDec"
+    name:t="trim_ailerons_rangeInc"
   }
 
   event{
@@ -771,33 +771,19 @@ hotkeys{
   }
 
   event{
-    name:t="camy_rangeInc"
+    name:t="trim_elevator_rangeDec"
   }
 
   event{
-    name:t="camx_rangeDec"
+    name:t="trim_elevator_rangeInc"
   }
 
   event{
     name:t="trim_elevator_rangeMax"
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=50
-      }
-    }
   }
 
   event{
     name:t="trim_elevator_rangeMin"
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=51
-      }
-    }
   }
 
   event{
@@ -805,11 +791,11 @@ hotkeys{
   }
 
   event{
-    name:t="camx_rangeInc"
+    name:t="fire_rangeDec"
   }
 
   event{
-    name:t="turret_x_rangeInc"
+    name:t="fire_rangeInc"
   }
 
   event{
@@ -825,11 +811,11 @@ hotkeys{
   }
 
   event{
-    name:t="turret_x_rangeDec"
+    name:t="rudder_right_rangeDec"
   }
 
   event{
-    name:t="turret_y_rangeInc"
+    name:t="rudder_right_rangeInc"
   }
 
   event{
@@ -845,11 +831,11 @@ hotkeys{
   }
 
   event{
-    name:t="turret_y_rangeDec"
+    name:t="rudder_left_rangeDec"
   }
 
   event{
-    name:t="flir_x"
+    name:t="rudder_left_rangeInc"
   }
 
   event{
@@ -862,14 +848,21 @@ hotkeys{
 
   event{
     name:t="zoom_rangeSet"
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=0
+      }
+    }
   }
 
   event{
-    name:t="flir_x_rangeMin"
+    name:t="zoom_rangeDec"
   }
 
   event{
-    name:t="flir_x_rangeMax"
+    name:t="zoom_rangeInc"
   }
 
   event{
@@ -898,14 +891,14 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=2
-        buttonId:i=57
+        buttonId:i=44
       }
     }
 
     shortcut{
       button{
         deviceId:i=3
-        buttonId:i=45
+        buttonId:i=2
       }
     }
   }
@@ -919,31 +912,7 @@ hotkeys{
   }
 
   event{
-    name:t="flir_x_rangeInc"
-  }
-
-  event{
-    name:t="flir_x_rangeDec"
-  }
-
-  event{
-    name:t="flir_x_rangeSet"
-  }
-
-  event{
-    name:t="flir_y"
-  }
-
-  event{
-    name:t="flir_y_rangeMin"
-  }
-
-  event{
-    name:t="flir_y_rangeMax"
-  }
-
-  event{
-    name:t="flir_y_rangeInc"
+    name:t="flir_y_rangeSet"
   }
 
   event{
@@ -951,19 +920,43 @@ hotkeys{
   }
 
   event{
-    name:t="flir_y_rangeSet"
+    name:t="flir_y_rangeInc"
   }
 
   event{
-    name:t="zoom_rangeInc"
+    name:t="flir_y_rangeMax"
   }
 
   event{
-    name:t="zoom_rangeDec"
+    name:t="flir_y_rangeMin"
   }
 
   event{
-    name:t="rudder_left_rangeInc"
+    name:t="flir_y"
+  }
+
+  event{
+    name:t="flir_x_rangeSet"
+  }
+
+  event{
+    name:t="flir_x_rangeDec"
+  }
+
+  event{
+    name:t="flir_x_rangeInc"
+  }
+
+  event{
+    name:t="flir_x_rangeMax"
+  }
+
+  event{
+    name:t="flir_x_rangeMin"
+  }
+
+  event{
+    name:t="flir_x"
   }
 
   event{
@@ -971,19 +964,33 @@ hotkeys{
   }
 
   event{
-    name:t="rudder_left_rangeDec"
+    name:t="turret_y_rangeDec"
   }
 
   event{
-    name:t="rudder_right_rangeInc"
+    name:t="turret_y_rangeInc"
   }
 
   event{
     name:t="turret_y_rangeMin"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=200
+      }
+    }
   }
 
   event{
     name:t="turret_y_rangeMax"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=208
+      }
+    }
   }
 
   event{
@@ -995,19 +1002,33 @@ hotkeys{
   }
 
   event{
-    name:t="rudder_right_rangeDec"
+    name:t="turret_x_rangeDec"
   }
 
   event{
-    name:t="fire_rangeInc"
+    name:t="turret_x_rangeInc"
   }
 
   event{
     name:t="turret_x_rangeMin"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=203
+      }
+    }
   }
 
   event{
     name:t="turret_x_rangeMax"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=205
+      }
+    }
   }
 
   event{
@@ -1015,11 +1036,11 @@ hotkeys{
   }
 
   event{
-    name:t="fire_rangeDec"
+    name:t="camx_rangeInc"
   }
 
   event{
-    name:t="trim_elevator_rangeInc"
+    name:t="camx_rangeDec"
   }
 
   event{
@@ -1028,25 +1049,39 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=3
-        buttonId:i=47
+        buttonId:i=0
       }
     }
   }
 
   event{
     name:t="camy_rangeMin"
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=25
+      }
+    }
   }
 
   event{
     name:t="camy_rangeMax"
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=23
+      }
+    }
   }
 
   event{
-    name:t="trim_elevator_rangeDec"
+    name:t="camy_rangeInc"
   }
 
   event{
-    name:t="trim_ailerons_rangeInc"
+    name:t="camy_rangeDec"
   }
 
   event{
@@ -1055,7 +1090,7 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=3
-        buttonId:i=47
+        buttonId:i=0
       }
     }
   }
@@ -1073,11 +1108,11 @@ hotkeys{
   }
 
   event{
-    name:t="trim_ailerons_rangeDec"
+    name:t="throttle_rangeInc"
   }
 
   event{
-    name:t="trim_rudder_rangeInc"
+    name:t="throttle_rangeDec"
   }
 
   event{
@@ -1085,11 +1120,11 @@ hotkeys{
   }
 
   event{
-    name:t="trim_rudder_rangeDec"
+    name:t="rudder_rangeDec"
   }
 
   event{
-    name:t="mixture_rangeInc"
+    name:t="rudder_rangeInc"
   }
 
   event{
@@ -1105,11 +1140,11 @@ hotkeys{
   }
 
   event{
-    name:t="mixture_rangeDec"
+    name:t="elevator_rangeDec"
   }
 
   event{
-    name:t="prop_pitch_rangeInc"
+    name:t="elevator_rangeInc"
   }
 
   event{
@@ -1125,11 +1160,11 @@ hotkeys{
   }
 
   event{
-    name:t="prop_pitch_rangeDec"
+    name:t="ailerons_rangeDec"
   }
 
   event{
-    name:t="radiator_rangeInc"
+    name:t="ailerons_rangeInc"
   }
 
   event{
@@ -1227,7 +1262,14 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=2
-        buttonId:i=199
+        buttonId:i=46
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=83
       }
     }
   }
@@ -1237,20 +1279,15 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=5
+        deviceId:i=2
+        buttonId:i=26
       }
     }
 
     shortcut{
       button{
-        deviceId:i=2
-        buttonId:i=29
-      }
-
-      button{
-        deviceId:i=2
-        buttonId:i=33
+        deviceId:i=3
+        buttonId:i=27
       }
     }
   }
@@ -1260,20 +1297,15 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=6
+        deviceId:i=2
+        buttonId:i=27
       }
     }
 
     shortcut{
       button{
-        deviceId:i=2
-        buttonId:i=33
-      }
-
-      button{
-        deviceId:i=2
-        buttonId:i=56
+        deviceId:i=3
+        buttonId:i=28
       }
     }
   }
@@ -1288,14 +1320,14 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=2
-        buttonId:i=49
+        buttonId:i=15
       }
     }
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=11
+        deviceId:i=2
+        buttonId:i=49
       }
     }
   }
@@ -1309,18 +1341,6 @@ hotkeys{
         buttonId:i=36
       }
     }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=14
-      }
-
-      button{
-        deviceId:i=3
-        buttonId:i=35
-      }
-    }
   }
 
   event{
@@ -1330,13 +1350,6 @@ hotkeys{
       button{
         deviceId:i=2
         buttonId:i=40
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=2
       }
     }
   }
@@ -1368,8 +1381,22 @@ hotkeys{
 
     shortcut{
       button{
+        deviceId:i=1
+        buttonId:i=2
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=45
+      }
+    }
+
+    shortcut{
+      button{
         deviceId:i=3
-        buttonId:i=23
+        buttonId:i=37
       }
     }
   }
@@ -1379,20 +1406,22 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=36
+        deviceId:i=2
+        buttonId:i=4
       }
     }
 
     shortcut{
       button{
-        deviceId:i=2
-        buttonId:i=56
-      }
-
-      button{
         deviceId:i=1
-        buttonId:i=0
+        buttonId:i=3
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=39
       }
     }
   }
@@ -1402,15 +1431,22 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=39
+        deviceId:i=2
+        buttonId:i=5
       }
     }
 
     shortcut{
       button{
         deviceId:i=2
-        buttonId:i=81
+        buttonId:i=19
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=1
+        buttonId:i=4
       }
     }
   }
@@ -1420,20 +1456,22 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=40
+        deviceId:i=2
+        buttonId:i=5
       }
     }
 
     shortcut{
       button{
-        deviceId:i=2
-        buttonId:i=29
-      }
-
-      button{
         deviceId:i=1
-        buttonId:i=0
+        buttonId:i=4
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=40
       }
     }
   }
@@ -1452,13 +1490,6 @@ hotkeys{
       button{
         deviceId:i=2
         buttonId:i=20
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=32
       }
     }
   }
@@ -1480,14 +1511,14 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=2
-        buttonId:i=59
+        buttonId:i=47
       }
     }
 
     shortcut{
       button{
         deviceId:i=3
-        buttonId:i=9
+        buttonId:i=15
       }
     }
   }
@@ -1497,8 +1528,15 @@ hotkeys{
 
     shortcut{
       button{
+        deviceId:i=2
+        buttonId:i=34
+      }
+    }
+
+    shortcut{
+      button{
         deviceId:i=3
-        buttonId:i=7
+        buttonId:i=11
       }
     }
   }
@@ -1508,15 +1546,15 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=12
+        deviceId:i=2
+        buttonId:i=50
       }
     }
 
     shortcut{
       button{
-        deviceId:i=2
-        buttonId:i=50
+        deviceId:i=3
+        buttonId:i=5
       }
     }
   }
@@ -1526,20 +1564,15 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=48
+        deviceId:i=1
+        buttonId:i=1
       }
     }
 
     shortcut{
       button{
-        deviceId:i=2
-        buttonId:i=29
-      }
-
-      button{
-        deviceId:i=2
-        buttonId:i=57
+        deviceId:i=3
+        buttonId:i=45
       }
     }
   }
@@ -1571,15 +1604,22 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=35
+        deviceId:i=1
+        buttonId:i=0
       }
     }
 
     shortcut{
       button{
-        deviceId:i=1
-        buttonId:i=0
+        deviceId:i=2
+        buttonId:i=2
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=35
       }
     }
   }
@@ -1589,15 +1629,15 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=40
+        deviceId:i=1
+        buttonId:i=0
       }
     }
 
     shortcut{
       button{
-        deviceId:i=1
-        buttonId:i=0
+        deviceId:i=2
+        buttonId:i=3
       }
     }
   }
@@ -1607,15 +1647,22 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=38
+        deviceId:i=1
+        buttonId:i=0
       }
     }
 
     shortcut{
       button{
-        deviceId:i=1
-        buttonId:i=0
+        deviceId:i=2
+        buttonId:i=3
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=38
       }
     }
   }
@@ -1631,13 +1678,6 @@ hotkeys{
       button{
         deviceId:i=2
         buttonId:i=23
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=21
       }
     }
   }
@@ -1677,7 +1717,7 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=3
-        buttonId:i=10
+        buttonId:i=16
       }
     }
   }
@@ -1691,14 +1731,33 @@ hotkeys{
         buttonId:i=62
       }
     }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=42
+      }
+
+      button{
+        deviceId:i=2
+        buttonId:i=59
+      }
+    }
   }
 
   event{
-    name:t="radiator_rangeDec"
+    name:t="ID_PAUSE_GAME"
   }
 
   event{
     name:t="ID_FLIGHTMENU_SETUP"
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=4
+      }
+    }
   }
 
   event{
@@ -1708,6 +1767,13 @@ hotkeys{
       button{
         deviceId:i=2
         buttonId:i=57
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=12
       }
     }
   }
@@ -1736,13 +1802,6 @@ hotkeys{
       button{
         deviceId:i=2
         buttonId:i=181
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=30
       }
     }
   }
@@ -1823,15 +1882,15 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=8
+        deviceId:i=2
+        buttonId:i=35
       }
     }
 
     shortcut{
       button{
-        deviceId:i=2
-        buttonId:i=47
+        deviceId:i=3
+        buttonId:i=4
       }
     }
   }
@@ -1932,6 +1991,13 @@ hotkeys{
         buttonId:i=28
       }
     }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=156
+      }
+    }
   }
 
   event{
@@ -1996,13 +2062,6 @@ hotkeys{
 
   event{
     name:t="ID_TRIM_RESET"
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=33
-      }
-    }
   }
 
   event{
@@ -2014,35 +2073,35 @@ hotkeys{
   }
 
   event{
-    name:t="brake_rangeInc"
+    name:t="ID_HELI_CHANGE_MISSILE_TYPE"
   }
 
   event{
-    name:t="brake_rangeDec"
+    name:t="ID_HELI_PREV_MISSILE_TYPE"
   }
 
   event{
-    name:t="weapon_rangeInc"
+    name:t="ID_HELI_TOGGLE_KEEP_POS"
   }
 
   event{
-    name:t="weapon_rangeDec"
+    name:t="ID_HELI_TOGGLE_KEEP_HEIGHT"
   }
 
   event{
-    name:t="cam_fwd_rangeInc"
+    name:t="ID_HELI_ANTIMISSILE_SYSTEM"
   }
 
   event{
-    name:t="cam_fwd_rangeDec"
+    name:t="ID_HELI_TOGGLE_SEAT"
   }
 
   event{
-    name:t="cam_strafe_rangeInc"
+    name:t="ID_HELI_DEBUG_FLIGHTMODEL"
   }
 
   event{
-    name:t="cam_strafe_rangeDec"
+    name:t="ID_HELI_FLIR"
   }
 
   event{
@@ -2190,11 +2249,11 @@ hotkeys{
   }
 
   event{
-    name:t="cam_vert_rangeInc"
+    name:t="gm_turret_x_rangeInc"
   }
 
   event{
-    name:t="cam_vert_rangeDec"
+    name:t="gm_turret_x_rangeDec"
   }
 
   event{
@@ -2214,11 +2273,11 @@ hotkeys{
   }
 
   event{
-    name:t="brake_left_rangeInc"
+    name:t="gm_turret_y_rangeInc"
   }
 
   event{
-    name:t="brake_left_rangeDec"
+    name:t="gm_turret_y_rangeDec"
   }
 
   event{
@@ -2230,11 +2289,11 @@ hotkeys{
   }
 
   event{
-    name:t="brake_right_rangeInc"
+    name:t="gm_throttle_rangeInc"
   }
 
   event{
-    name:t="brake_right_rangeDec"
+    name:t="gm_throttle_rangeDec"
   }
 
   event{
@@ -2331,13 +2390,6 @@ hotkeys{
         buttonId:i=7
       }
     }
-
-    shortcut{
-      button{
-        deviceId:i=2
-        buttonId:i=74
-      }
-    }
   }
 
   event{
@@ -2404,13 +2456,6 @@ hotkeys{
         buttonId:i=16
       }
     }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=6
-      }
-    }
   }
 
   event{
@@ -2422,13 +2467,6 @@ hotkeys{
         buttonId:i=18
       }
     }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=5
-      }
-    }
   }
 
   event{
@@ -2437,7 +2475,7 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=2
-        buttonId:i=71
+        buttonId:i=42
       }
     }
   }
@@ -2448,27 +2486,13 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=2
-        buttonId:i=22
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=7
+        buttonId:i=33
       }
     }
   }
 
   event{
     name:t="ID_ZOOM_HOLD_GM"
-
-    shortcut{
-      button{
-        deviceId:i=2
-        buttonId:i=46
-      }
-    }
 
     shortcut{
       button{
@@ -2480,13 +2504,6 @@ hotkeys{
 
   event{
     name:t="ID_ARTILLERY_CANCEL"
-
-    shortcut{
-      button{
-        deviceId:i=2
-        buttonId:i=14
-      }
-    }
   }
 
   event{
@@ -2495,13 +2512,20 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=1
-        buttonId:i=3
+        buttonId:i=2
       }
     }
   }
 
   event{
     name:t="ID_SHOW_MOUSE_CURSOR"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=56
+      }
+    }
   }
 
   event{
@@ -2509,8 +2533,15 @@ hotkeys{
 
     shortcut{
       button{
+        deviceId:i=2
+        buttonId:i=24
+      }
+    }
+
+    shortcut{
+      button{
         deviceId:i=3
-        buttonId:i=14
+        buttonId:i=6
       }
     }
   }
@@ -2536,15 +2567,15 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=22
+        deviceId:i=2
+        buttonId:i=30
       }
     }
 
     shortcut{
       button{
         deviceId:i=2
-        buttonId:i=30
+        buttonId:i=203
       }
     }
   }
@@ -2554,15 +2585,15 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=20
+        deviceId:i=2
+        buttonId:i=32
       }
     }
 
     shortcut{
       button{
         deviceId:i=2
-        buttonId:i=32
+        buttonId:i=205
       }
     }
   }
@@ -2583,13 +2614,6 @@ hotkeys{
         buttonId:i=208
       }
     }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=21
-      }
-    }
   }
 
   event{
@@ -2606,13 +2630,6 @@ hotkeys{
       button{
         deviceId:i=2
         buttonId:i=200
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=19
       }
     }
   }
@@ -2633,8 +2650,145 @@ hotkeys{
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=40
+        deviceId:i=2
+        buttonId:i=57
+      }
+    }
+  }
+
+  event{
+    name:t="ID_FIRE_GM_SECONDARY_GUN"
+
+    shortcut{
+      button{
+        deviceId:i=1
+        buttonId:i=0
+      }
+    }
+  }
+
+  event{
+    name:t="ID_FIRE_GM"
+
+    shortcut{
+      button{
+        deviceId:i=1
+        buttonId:i=0
+      }
+    }
+  }
+
+  event{
+    name:t="head_pos_z_rangeSet"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=76
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=211
+      }
+    }
+  }
+
+  event{
+    name:t="head_pos_z_rangeMax"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=77
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=73
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=81
+      }
+    }
+  }
+
+  event{
+    name:t="head_pos_z_rangeMin"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=75
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=71
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=79
+      }
+    }
+  }
+
+  event{
+    name:t="head_pos_z"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=51
+      }
+    }
+  }
+
+  event{
+    name:t="head_pos_y_rangeSet"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=76
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=211
+      }
+    }
+  }
+
+  event{
+    name:t="head_pos_y_rangeMax"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=72
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=71
       }
     }
 
@@ -2647,87 +2801,90 @@ hotkeys{
   }
 
   event{
-    name:t="ID_FIRE_GM_SECONDARY_GUN"
+    name:t="head_pos_y_rangeMin"
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=38
+        deviceId:i=2
+        buttonId:i=80
       }
     }
 
     shortcut{
       button{
         deviceId:i=2
-        buttonId:i=77
-      }
-    }
-  }
-
-  event{
-    name:t="ID_FIRE_GM"
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=35
+        buttonId:i=79
       }
     }
 
     shortcut{
       button{
-        deviceId:i=1
-        buttonId:i=0
+        deviceId:i=2
+        buttonId:i=81
       }
     }
-  }
-
-  event{
-    name:t="head_pos_z_rangeSet"
-  }
-
-  event{
-    name:t="head_pos_z_rangeMax"
-  }
-
-  event{
-    name:t="head_pos_z_rangeMin"
-  }
-
-  event{
-    name:t="head_pos_z"
-  }
-
-  event{
-    name:t="head_pos_y_rangeSet"
-  }
-
-  event{
-    name:t="head_pos_y_rangeMax"
-  }
-
-  event{
-    name:t="head_pos_y_rangeMin"
   }
 
   event{
     name:t="head_pos_y"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=51
+      }
+    }
   }
 
   event{
     name:t="head_pos_x_rangeSet"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=76
+      }
+    }
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=211
+      }
+    }
   }
 
   event{
     name:t="head_pos_x_rangeMax"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=78
+      }
+    }
   }
 
   event{
     name:t="head_pos_x_rangeMin"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=74
+      }
+    }
   }
 
   event{
     name:t="head_pos_x"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=51
+      }
+    }
   }
 
   event{
@@ -2739,21 +2896,28 @@ hotkeys{
         buttonId:i=157
       }
     }
+  }
+
+  event{
+    name:t="ID_CAMERA_VIEW_BACK"
 
     shortcut{
       button{
-        deviceId:i=3
-        buttonId:i=28
+        deviceId:i=2
+        buttonId:i=52
       }
     }
   }
 
   event{
-    name:t="ID_CAMERA_VIEW_BACK"
-  }
-
-  event{
     name:t="ID_CAMERA_VIEW_DOWN"
+
+    shortcut{
+      button{
+        deviceId:i=2
+        buttonId:i=39
+      }
+    }
   }
 
   event{
@@ -2805,7 +2969,7 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=3
-        buttonId:i=24
+        buttonId:i=46
       }
     }
   }
@@ -2816,7 +2980,7 @@ hotkeys{
     shortcut{
       button{
         deviceId:i=3
-        buttonId:i=26
+        buttonId:i=48
       }
     }
   }
@@ -2882,20 +3046,6 @@ hotkeys{
 
   event{
     name:t="ID_TRANS_GEAR_NEUTRAL"
-
-    shortcut{
-      button{
-        deviceId:i=2
-        buttonId:i=42
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=2
-      }
-    }
   }
 
   event{
@@ -2904,31 +3054,10 @@ hotkeys{
 
   event{
     name:t="ID_LOCK_TARGET_GM"
-
-    shortcut{
-      button{
-        deviceId:i=2
-        buttonId:i=44
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=25
-      }
-    }
   }
 
   event{
     name:t="ID_SHORT_STOP"
-
-    shortcut{
-      button{
-        deviceId:i=2
-        buttonId:i=34
-      }
-    }
   }
 
   event{
@@ -2941,6 +3070,13 @@ hotkeys{
 
   event{
     name:t="ID_IGNITE_BOOSTERS"
+
+    shortcut{
+      button{
+        deviceId:i=3
+        buttonId:i=3
+      }
+    }
   }
 
   event{
@@ -2961,13 +3097,6 @@ hotkeys{
 
   event{
     name:t="ID_TOGGLE_GM_CROSSHAIR_LIGHTING"
-
-    shortcut{
-      button{
-        deviceId:i=2
-        buttonId:i=75
-      }
-    }
   }
 
   event{
@@ -2976,29 +3105,10 @@ hotkeys{
 
   event{
     name:t="ID_TOGGLE_COCKPIT_DOOR"
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=3
-      }
-
-      button{
-        deviceId:i=3
-        buttonId:i=13
-      }
-    }
   }
 
   event{
     name:t="ID_TOGGLE_COCKPIT_LIGHTS"
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=13
-      }
-    }
   }
 
   event{
@@ -3011,13 +3121,6 @@ hotkeys{
 
   event{
     name:t="ID_CAMERA_BINOCULARS"
-
-    shortcut{
-      button{
-        deviceId:i=2
-        buttonId:i=48
-      }
-    }
   }
 
   event{
@@ -3110,20 +3213,6 @@ hotkeys{
 
   event{
     name:t="gm_brake_left_rangeMax"
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=4
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=2
-      }
-    }
   }
 
   event{
@@ -3140,20 +3229,6 @@ hotkeys{
 
   event{
     name:t="gm_brake_right_rangeMax"
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=3
-      }
-    }
-
-    shortcut{
-      button{
-        deviceId:i=3
-        buttonId:i=2
-      }
-    }
   }
 
   event{
@@ -3374,12 +3449,12 @@ joysticks{
 
     ailerons{
       axisId:i=12
-      innerDeadzone:r=0.02
+      innerDeadzone:r=0
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
       inverse:b=no
-      nonlinearity:r=1
+      nonlinearity:r=0
       kAdd:r=0
       kMul:r=1
       relSens:r=1
@@ -3401,12 +3476,12 @@ joysticks{
 
     elevator{
       axisId:i=11
-      innerDeadzone:r=0.02
+      innerDeadzone:r=0
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
       inverse:b=no
-      nonlinearity:r=1
+      nonlinearity:r=0
       kAdd:r=0
       kMul:r=1
       relSens:r=1
@@ -3481,7 +3556,7 @@ joysticks{
     }
 
     camx{
-      axisId:i=14
+      axisId:i=-1
       innerDeadzone:r=0
       outerDeadzone:r=0.05
       rangeMin:r=-1
@@ -3491,7 +3566,7 @@ joysticks{
       kAdd:r=0
       kMul:r=1
       relSens:r=1
-      relStep:r=0
+      relStep:r=0.2
       relative:b=yes
       keepDisabledValue:b=no
       nonLinearitySlider0:r=1
@@ -3508,7 +3583,7 @@ joysticks{
     }
 
     camy{
-      axisId:i=15
+      axisId:i=-1
       innerDeadzone:r=0
       outerDeadzone:r=0.05
       rangeMin:r=-1
@@ -3518,7 +3593,7 @@ joysticks{
       kAdd:r=0
       kMul:r=1
       relSens:r=1
-      relStep:r=0
+      relStep:r=0.2
       relative:b=yes
       keepDisabledValue:b=no
       nonLinearitySlider0:r=1
@@ -3535,8 +3610,8 @@ joysticks{
     }
 
     turret_x{
-      axisId:i=14
-      innerDeadzone:r=0.05
+      axisId:i=-1
+      innerDeadzone:r=0.02
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
@@ -3562,8 +3637,8 @@ joysticks{
     }
 
     turret_y{
-      axisId:i=15
-      innerDeadzone:r=0.05
+      axisId:i=-1
+      innerDeadzone:r=0.02
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
@@ -3589,12 +3664,12 @@ joysticks{
     }
 
     zoom{
-      axisId:i=-1
+      axisId:i=7
       innerDeadzone:r=0
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
-      inverse:b=yes
+      inverse:b=no
       nonlinearity:r=0
       kAdd:r=0
       kMul:r=1
@@ -3724,15 +3799,15 @@ joysticks{
     }
 
     gm_mouse_aim_x{
-      axisId:i=12
-      innerDeadzone:r=0
+      axisId:i=-1
+      innerDeadzone:r=0.05
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
       inverse:b=no
       nonlinearity:r=0
       kAdd:r=0
-      kMul:r=0.5
+      kMul:r=1
       relSens:r=1
       relStep:r=0
       relative:b=no
@@ -3751,15 +3826,15 @@ joysticks{
     }
 
     gm_mouse_aim_y{
-      axisId:i=11
-      innerDeadzone:r=0
+      axisId:i=-1
+      innerDeadzone:r=0.05
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
       inverse:b=no
       nonlinearity:r=0
       kAdd:r=0
-      kMul:r=0.5
+      kMul:r=1
       relSens:r=1
       relStep:r=0
       relative:b=no
@@ -3806,7 +3881,7 @@ joysticks{
 
     trim_elevator{
       axisId:i=-1
-      innerDeadzone:r=0.01
+      innerDeadzone:r=0
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
@@ -3814,7 +3889,7 @@ joysticks{
       nonlinearity:r=0
       kAdd:r=0
       kMul:r=1
-      relSens:r=0.16
+      relSens:r=0.2
       relStep:r=0
       relative:b=yes
       keepDisabledValue:b=no
@@ -3833,7 +3908,7 @@ joysticks{
 
     trim_ailerons{
       axisId:i=-1
-      innerDeadzone:r=0.1
+      innerDeadzone:r=0
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
@@ -3841,7 +3916,7 @@ joysticks{
       nonlinearity:r=0
       kAdd:r=0
       kMul:r=1
-      relSens:r=0.16
+      relSens:r=0.2
       relStep:r=0
       relative:b=yes
       keepDisabledValue:b=no
@@ -3860,7 +3935,7 @@ joysticks{
 
     trim_rudder{
       axisId:i=-1
-      innerDeadzone:r=0.1
+      innerDeadzone:r=0
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
@@ -3868,7 +3943,7 @@ joysticks{
       nonlinearity:r=0
       kAdd:r=0
       kMul:r=1
-      relSens:r=0.16
+      relSens:r=0.2
       relStep:r=0
       relative:b=yes
       keepDisabledValue:b=no
@@ -4075,14 +4150,14 @@ joysticks{
     }
 
     gm_throttle{
-      axisId:i=3
-      innerDeadzone:r=0
+      axisId:i=-1
+      innerDeadzone:r=0.02
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
-      inverse:b=yes
+      inverse:b=no
       nonlinearity:r=0
-      kAdd:r=0.1
+      kAdd:r=0
       kMul:r=1
       relSens:r=1
       relStep:r=0
@@ -4102,12 +4177,12 @@ joysticks{
     }
 
     gm_steering{
-      axisId:i=2
-      innerDeadzone:r=0.1
+      axisId:i=-1
+      innerDeadzone:r=0.02
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
-      inverse:b=yes
+      inverse:b=no
       nonlinearity:r=0
       kAdd:r=0
       kMul:r=1
@@ -4129,8 +4204,8 @@ joysticks{
     }
 
     gm_brake_left{
-      axisId:i=1
-      innerDeadzone:r=0
+      axisId:i=-1
+      innerDeadzone:r=0.05
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
@@ -4156,8 +4231,8 @@ joysticks{
     }
 
     gm_brake_right{
-      axisId:i=0
-      innerDeadzone:r=0
+      axisId:i=-1
+      innerDeadzone:r=0.05
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
@@ -4184,7 +4259,7 @@ joysticks{
 
     gm_clutch{
       axisId:i=-1
-      innerDeadzone:r=0
+      innerDeadzone:r=0.05
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
@@ -4325,8 +4400,8 @@ joysticks{
       rangeMax:r=1
       inverse:b=no
       nonlinearity:r=0
-      kAdd:r=0
-      kMul:r=1
+      kAdd:r=-0
+      kMul:r=1.1
       relSens:r=1
       relStep:r=0
       relative:b=no
@@ -4352,8 +4427,8 @@ joysticks{
       rangeMax:r=1
       inverse:b=no
       nonlinearity:r=0
-      kAdd:r=0
-      kMul:r=1
+      kAdd:r=-0
+      kMul:r=1.1
       relSens:r=1
       relStep:r=0
       relative:b=no
@@ -4427,7 +4502,7 @@ joysticks{
 
     head_pos_x{
       axisId:i=-1
-      innerDeadzone:r=0
+      innerDeadzone:r=0.05
       outerDeadzone:r=0.05
       rangeMin:r=0
       rangeMax:r=1
@@ -4437,7 +4512,7 @@ joysticks{
       kMul:r=1
       relSens:r=1
       relStep:r=0
-      relative:b=no
+      relative:b=yes
       keepDisabledValue:b=no
       nonLinearitySlider0:r=1
       nonLinearitySlider1:r=1
@@ -4454,7 +4529,7 @@ joysticks{
 
     head_pos_y{
       axisId:i=-1
-      innerDeadzone:r=0
+      innerDeadzone:r=0.05
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
@@ -4464,7 +4539,7 @@ joysticks{
       kMul:r=1
       relSens:r=1
       relStep:r=0
-      relative:b=no
+      relative:b=yes
       keepDisabledValue:b=no
       nonLinearitySlider0:r=1
       nonLinearitySlider1:r=1
@@ -4481,7 +4556,7 @@ joysticks{
 
     head_pos_z{
       axisId:i=-1
-      innerDeadzone:r=0
+      innerDeadzone:r=0.05
       outerDeadzone:r=0.05
       rangeMin:r=-1
       rangeMax:r=1
@@ -4491,7 +4566,7 @@ joysticks{
       kMul:r=1
       relSens:r=1
       relStep:r=0
-      relative:b=no
+      relative:b=yes
       keepDisabledValue:b=no
       nonLinearitySlider0:r=1
       nonLinearitySlider1:r=1
@@ -4733,9 +4808,9 @@ joysticks{
     }
 
     mouse{
-      axis:i=0
-      axis:i=1
-      axis:i=8
+      axis:i=-1
+      axis:i=-1
+      axis:i=3
       axis:i=8
     }
   }
