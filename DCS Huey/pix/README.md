@@ -19,11 +19,17 @@ Reach these menus in the first `Options` screen when DCS starts.
 ![Gameplay](./dcs_uh1h_gameplay.jpg)
 
 
-### Controls (These screenshots includes separate rudder pedals)
+### Controls 
+
+Select `UH-1H Sim` in the first dropdown
 
 ![Controls](./dcs_uh1h_controls.jpg)
 
+Select `Axis Controls` in the second dropdown
+
 ![Controls 1](./dcs_uh1h_controls1.jpg)
+
+Set the axies as follows (These screenshots includes separate rudder pedals)
 
 ![Controls 2](./dcs_uh1h_controls2.jpg)
 
