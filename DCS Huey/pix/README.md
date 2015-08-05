@@ -8,22 +8,25 @@ Reach these menus in the first `Options` screen when DCS starts.
 
 ### Special
 
-![system](./dcs_uh1h_special.jpg)
+![Special](./dcs_uh1h_special.jpg)
 
 ### Misc
 
-![system](./dcs_uh1h_misc.jpg)
+![Misc](./dcs_uh1h_misc.jpg)
 
 ### Gameplay
 
-![system](./dcs_uh1h_gameplay.jpg)
+![Gameplay](./dcs_uh1h_gameplay.jpg)
 
 
-### Controls 1 (This screenshot includes separate rudder pedals)
+### Controls (These screenshots includes separate rudder pedals)
 
-![system](./dcs_uh1h_controls1.jpg)
+![Controls](./dcs_uh1h_controls.jpg)
 
+![Controls 1](./dcs_uh1h_controls1.jpg)
 
-### Controls 2 (This screenshot includes separate rudder pedals)
+![Controls 2](./dcs_uh1h_controls2.jpg)
 
-![system](./dcs_uh1h_controls2.jpg)
+### Audio
+
+![audio](./dcs_uh1h_audio.jpg)
