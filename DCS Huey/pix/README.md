@@ -29,7 +29,7 @@ Select `Axis Commands` in the second dropdown
 
 ![Controls 1](./dcs_uh1h_controls1.jpg)
 
-Set the axies as follows (These screenshots includes separate rudder pedals)
+Set the axies as follows :warning: **(This screenshot includes separate rudder pedals)** :warning:
 
 ![Controls 2](./dcs_uh1h_controls2.jpg)
 
