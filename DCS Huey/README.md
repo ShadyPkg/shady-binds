@@ -40,7 +40,8 @@ s: stick
 - tF rotary click to start the engine.
 
 ##Finally! (Look overhead midline):
-- tTGL4 up to turn inverter on.[]
+- tTGL4 up to turn inverter on.
+
 ##I Lied, There's Still the Radios (Bottom midline panel):  =D
 
 *Also, another BUG/Feature.* 
