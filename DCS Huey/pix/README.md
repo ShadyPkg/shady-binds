@@ -25,7 +25,7 @@ Select `UH-1H Sim` in the first dropdown
 
 ![Controls](./dcs_uh1h_controls.jpg)
 
-Select `Axis Controls` in the second dropdown
+Select `Axis Commands` in the second dropdown
 
 ![Controls 1](./dcs_uh1h_controls1.jpg)
 
