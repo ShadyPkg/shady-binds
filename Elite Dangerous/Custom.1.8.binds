@@ -2,9 +2,9 @@
 <Root PresetName="Custom" MajorVersion="1" MinorVersion="8">
 	<KeyboardLayout>en-US</KeyboardLayout>
 	<LockedDevice>{NoDevice}</LockedDevice>
-	<MouseXMode Value="Bindings_MouseRoll" />
+	<MouseXMode Value="" />
 	<MouseXDecay Value="0" />
-	<MouseYMode Value="Bindings_MousePitch" />
+	<MouseYMode Value="" />
 	<MouseYDecay Value="0" />
 	<MouseReset>
 		<Primary Device="{NoDevice}" Key="" />
@@ -466,6 +466,10 @@
 		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</FireChaffLauncher>
+	<ChargeECM>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</ChargeECM>
 	<PhotoCameraToggle>
 		<Primary Device="Keyboard" Key="Key_Space">
 			<Modifier Device="Keyboard" Key="Key_LeftControl" />
@@ -474,6 +478,14 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</PhotoCameraToggle>
 	<EnableMenuGroups Value="0" />
+	<WeaponColourToggle>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</WeaponColourToggle>
+	<EngineColourToggle>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</EngineColourToggle>
 	<UIFocus>
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -854,6 +866,10 @@
 		<Primary Device="Keyboard" Key="Key_End" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</EjectAllCargo_Buggy>
+	<RecallDismissShip>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</RecallDismissShip>
 	<PhotoCameraToggle_Buggy>
 		<Primary Device="Keyboard" Key="Key_Space">
 			<Modifier Device="Keyboard" Key="Key_LeftControl" />
@@ -899,4 +915,36 @@
 		<Secondary Device="{NoDevice}" Key="" />
 		<ToggleOn Value="0" />
 	</HeadLookToggle_Buggy>
+	<OrderRequestDock>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</OrderRequestDock>
+	<OrderDefensiveBehaviour>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</OrderDefensiveBehaviour>
+	<OrderAggressiveBehaviour>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</OrderAggressiveBehaviour>
+	<OrderFocusTarget>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</OrderFocusTarget>
+	<OrderHoldFire>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</OrderHoldFire>
+	<OrderHoldPosition>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</OrderHoldPosition>
+	<OrderFollow>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</OrderFollow>
+	<OpenOrders>
+		<Primary Device="{NoDevice}" Key="" />
+		<Secondary Device="{NoDevice}" Key="" />
+	</OpenOrders>
 </Root>
